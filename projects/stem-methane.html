@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stem Methane Flux Decay | Zachary Brown</title>
+  <meta name="description" content="Zachary Brown geospatial portfolio focused on wetlands, methane flux analysis, field instrumentation, R workflows, and environmental data analysis.">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+<header class="site-header">
+  <nav class="nav">
+    <a class="brand" href="../index.html">Zachary Brown</a>
+    <div class="nav-links">
+      <a href="../portfolio.html">Portfolio</a>
+      <a href="../resume.html">Résumé</a>
+      <a href="../contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<section class="project-hero">
+  <p class="eyebrow">Project</p>
+  <h1 class="project-title">Modeling Vertical Decay of Methane Flux Along Bald Cypress Stems</h1>
+  <div class="meta">
+    <span class="tag">Wetland methane</span>
+    <span class="tag">LI-COR instrumentation</span>
+    <span class="tag">R</span>
+    <span class="tag">fluxible</span>
+    <span class="tag">Nonlinear modeling</span>
+  </div>
+</section>
+
+<section class="section compact">
+  <h2>Abstract</h2>
+  <div class="abstract">
+    <p>
+      Wetlands are major long-term carbon sinks, but they are also the largest natural source of atmospheric methane. In forested wetland systems, tree stems can act as methane transport pathways from saturated soils to the atmosphere, complicating efforts to quantify ecosystem-scale methane emissions. This project evaluated vertical patterns of stem-mediated methane flux in bald cypress (<em>Taxodium distichum</em>) at Murphy’s Pond, a bottomland hardwood wetland in western Kentucky.
+    </p>
+
+    <p>
+      Field measurements were collected during three fall 2025 sampling campaigns at two hydrologically distinct plots: Upland Edge (UE) and Muddy Transition (MT). Methane concentration measurements were collected using a LI-7810 CH₄/CO₂/H₂O trace gas analyzer connected to a LI-COR chamber system. Custom static collars were installed along bald cypress stems at 40, 80, 120, and 160 cm above the stem base. Field metadata and raw gas analyzer outputs were processed in R using the <code>fluxible</code> package to match chamber windows, fit concentration curves, apply quality control, and calculate methane fluxes.
+    </p>
+
+    <p>
+      Linear, log-linear, and exponential decay models were compared to characterize how methane flux changed with stem height. Across all sampling dates, stem methane flux declined sharply with height, with the strongest decrease occurring between 40 and 80 cm and fluxes tapering toward low values by 160 cm. The exponential model consistently provided the best fit based on AIC comparisons, indicating that stem-mediated methane emissions followed a nonlinear vertical decay pattern. Plot comparisons showed higher low-height fluxes at the Upland Edge plot than at the Muddy Transition plot, highlighting spatial heterogeneity in methane production and transport pathways within the wetland.
+    </p>
+  </div>
+</section>
+
+<section class="content-section">
+  <h2>Project Details</h2>
+
+  <div class="detail-card">
+    <div class="detail-item">
+      <span class="detail-label">Year</span>
+      <span class="detail-value">Fall 2025</span>
+    </div>
+
+    <div class="detail-item">
+      <span class="detail-label">Course</span>
+      <span class="detail-value">EES 619: Seminar in Research Techniques</span>
+    </div>
+
+    <div class="detail-item">
+      <span class="detail-label">Study Area</span>
+      <span class="detail-value">Murphy’s Pond, western Kentucky</span>
+    </div>
+
+    <div class="detail-item">
+      <span class="detail-label">Methods</span>
+      <span class="detail-value">LI-7810 gas analyzer measurements, LI-COR chamber sampling, stem collars, R processing, fluxible workflow, AIC model comparison, and exponential decay modeling</span>
+    </div>
+  </div>
+</section>
+
+<section class="content-section">
+  <h2>Maps and Figures</h2>
+
+  <div class="figure-stack">
+
+    <figure>
+      <img src="../assets/img/stem-methane/study-area.jpg" alt="Study area map of Murphy's Pond stem methane sampling plots">
+      <figcaption>
+        Murphy’s Pond study area showing the Upland Edge and Muddy Transition sampling plots used for stem methane flux measurements.
+      </figcaption>
+    </figure>
+
+    <figure>
+      <img src="../assets/img/stem-methane/field-setup.png" alt="Field setup diagram for stem and knee methane flux sampling">
+      <figcaption>
+        Field sampling design showing stem collar heights, knee measurements, and LI-COR chamber instrumentation.
+      </figcaption>
+    </figure>
+
+    <figure>
+      <img src="../assets/img/stem-methane/exponential-decay.png" alt="Exponential decay model of stem methane flux by collar height">
+      <figcaption>
+        Exponential decay fits showing sharp decreases in stem methane flux with increasing collar height across sampling dates.
+      </figcaption>
+    </figure>
+
+    <figure>
+      <img src="../assets/img/stem-methane/flux-by-height.png" alt="Boxplot of methane flux distribution by stem collar height">
+      <figcaption>
+        Stem methane flux distributions by collar height, showing narrowing variability and lower fluxes at higher stem positions.
+      </figcaption>
+    </figure>
+
+    <figure>
+      <img src="../assets/img/stem-methane/ue-mt-comparison.png" alt="Comparison of stem methane flux by height and plot">
+      <figcaption>
+        UE and MT plot comparison showing higher low-height methane fluxes at the Upland Edge plot and convergence at upper collars.
+      </figcaption>
+    </figure>
+
+  </div>
+</section>
+
+<section class="section">
+  <a class="button secondary" href="../portfolio.html">Back to portfolio</a>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span>Zachary Brown</span>
+    <span>Geospatial · Remote Sensing · Environmental Analysis</span>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

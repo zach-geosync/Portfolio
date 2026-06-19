@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wetland Methane Flux Variability | Zachary Brown</title>
+  <meta name="description" content="Zachary Brown geospatial portfolio focused on remote sensing, GIS, wetlands, methane flux analysis, UAV monitoring, and environmental data analysis.">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+<header class="site-header">
+  <nav class="nav">
+    <a class="brand" href="../index.html">Zachary Brown</a>
+    <div class="nav-links">
+      <a href="../portfolio.html">Portfolio</a>
+      <a href="../resume.html">Résumé</a>
+      <a href="../contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<section class="project-hero">
+  <p class="eyebrow">Project</p>
+  <h1 class="project-title">Wetland Methane Flux Variability Inferred from In-Situ Eddy Covariance and Satellite Measurements</h1>
+  <div class="meta">
+    <span class="tag">M.S. Thesis</span>
+    <span class="tag">Wetland methane</span>
+    <span class="tag">Google Earth Engine</span>
+    <span class="tag">Remote sensing</span>
+    <span class="tag">CART modeling</span>
+  </div>
+</section>
+
+<section class="section compact">
+  <h2>Abstract</h2>
+  <div class="abstract">
+    <p>
+      Despite their small contribution to global land cover, wetlands are the largest natural source of atmospheric methane. Wetland methane emissions vary widely, and this variability introduces substantial uncertainties that limit our ability to accurately represent methane budgets. Satellite remote sensing provides scalable environmental indicators that may help explain this complexity across diverse wetland systems.
+    </p>
+
+    <p>
+      This study investigates relationships between methane flux and remotely sensed environmental drivers using eddy covariance observations from 19 AmeriFlux wetland sites. Methane flux measurements were aggregated to monthly means and paired with satellite observations from the Harmonized Landsat–Sentinel (HLS) dataset and VIIRS land surface temperature (LST) products from 2016 to 2024. Vegetation and hydrologic indices (NDVI, EVI, SAVI, NDMI, NDWI, and GVMI) were calculated in Google Earth Engine and joined with flux observations to create a dataset of 1,017 site-month observations.
+    </p>
+
+    <p>
+      Initial linear regression analyses revealed significant relationships between methane flux and several vegetation indices, particularly EVI, which explained approximately 10–45% of monthly methane flux variability across individual sites. These results indicate that seasonal vegetation productivity captures a substantial portion of methane dynamics across wetland ecosystems. However, the strength of these relationships varied among wetland types, suggesting the presence of nonlinear environmental controls.
+    </p>
+
+    <p>
+      To identify nonlinear relationships and environmental thresholds, classification and regression tree (CART) models were developed to predict methane flux from remote sensing predictors and wetland type. These results indicate that wetland type was the primary partitioning in the model, whereas vegetation productivity (EVI) and LST further differentiated emission regimes. The final model explains approximately 45% of observed variability in methane flux, demonstrating that satellite-derived indicators capture meaningful ecological drivers of wetland methane dynamics. These findings highlight the potential for remote sensing to support scalable frameworks for monitoring and modeling methane emissions across heterogeneous wetland landscapes.
+    </p>
+  </div>
+</section>
+
+<section class="content-section">
+  <h2>Project Details</h2>
+
+  <div class="detail-card">
+    <div class="detail-item">
+      <span class="detail-label">Year</span>
+      <span class="detail-value">2026</span>
+    </div>
+
+    <div class="detail-item">
+      <span class="detail-label">Context</span>
+      <span class="detail-value">M.S. Thesis</span>
+    </div>
+
+    <div class="detail-item">
+      <span class="detail-label">Recognition</span>
+      <span class="detail-value">Sigma Xi First Place Graduate Poster, Outstanding Student Research Award</span>
+    </div>
+
+    <div class="detail-item">
+      <span class="detail-label">Presentations</span>
+      <span class="detail-value">Presented at AGU 2025 and ASPRS 2026 Mid-South Conference, Spring Scholars Week 2026, Sigma Xi Poster Competition</span>
+    </div>
+  </div>
+</section>
+
+<section class="content-section">
+  <h2>Maps and Figures</h2>
+
+  <div class="figure-stack">
+
+    <figure>
+      <img src="../assets/img/wetland-methane/site-map.png" alt="Map of AmeriFlux wetland methane flux study sites">
+      <figcaption>
+        Study site map showing the AmeriFlux wetland sites used to evaluate methane flux relationships with remotely sensed environmental predictors.
+      </figcaption>
+    </figure>
+
+    <figure>
+      <img src="../assets/img/wetland-methane/full-sampling-design-graphic.png" alt="Sampling design graphic for wetland methane remote sensing workflow">
+      <figcaption>
+        Integrated sampling design at Murphy's Pond, KY. Measurements integrate satellite observations (A), UAV profiling (B), eddy-covariance tower fluxes (C), tree stem chambers (D), soil and knee chambers (E–F), and surface water chambers (G) to capture CH₄ variability across vertical and spatial scales. Together, these measurements will link fine-scale variability with ecosystem- and landscape-scale flux dynamics.
+      </figcaption>
+    </figure>
+
+    <figure>
+      <img src="../assets/img/wetland-methane/decision-tree.png" alt="CART decision tree for wetland methane flux prediction">
+      <figcaption>
+        Pruned decision tree plot for CH₄ flux predicted as a function of remotely sensed variables. The number in the top node represents the mean predicted CH₄ flux, and n values indicate the sample size within each node. Predictor variables shown along the branches define the splitting criteria, with “yes” and “no” indicating the decision rule at each node. Subsequent nodes represent partitioned subsets of the data, with terminal nodes showing the final predicted CH₄ flux values for each group. The model identifies wetland type as the primary control on CH₄ flux, followed by vegetation condition (EVI) and land surface temperature (LST), highlighting hierarchical and threshold-based controls on flux variability.
+      </figcaption>
+    </figure>
+
+    <figure>
+      <img src="../assets/img/wetland-methane/r2-violin.png" alt="Violin plot of bivariate R squared values by remote sensing predictor">
+      <figcaption>
+        Distribution of site-level bivariate model performance (R²) for each remote sensing predictor across all sites. Each violin represents the kernel density distribution of R² values derived from ordinary least squares regressions between monthly CH₄ flux and individual predictors at each site, where the width of the violin reflects the relative frequency of observations at a given R² value. Colored fills distinguish individual predictors, while overlaid boxplots indicate the median and interquartile range.
+      </figcaption>
+    </figure>
+
+    <figure>
+      <img src="../assets/img/wetland-methane/cross-type-comparison.png" alt="Cross-type comparison of methane flux relationships by wetland class">
+      <figcaption>
+        Mean site-level predictor performance (R2) for CH₄ flux across wetland types. Bars represent the average coefficient of determination (R²) from site-level bivariate regressions between CH₄ flux and individual remotely sensed predictors, grouped by wetland class. Predictor variables include vegetation indices (NDVI, EVI, SAVI), moisture indices (NDWI, NDMI, GVMI), and land surface temperature (LST). Colors indicate whether ≥50% of sites within each wetland type showed statistically significant relationships (p < 0.05). 
+      </figcaption>
+    </figure>
+
+  </div>
+</section>
+
+<section class="section">
+  <a class="button secondary" href="../portfolio.html">Back to portfolio</a>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span>Zachary Brown</span>
+    <span>Geospatial · Remote Sensing · Environmental Analysis</span>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
