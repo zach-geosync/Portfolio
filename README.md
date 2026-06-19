@@ -1,6 +1,6 @@
 # Zachary Brown Geospatial Portfolio
 
-My geospatial portfolio: **[portfolio link coming soon]**
+My geospatial portfolio: https://zach-geosync.github.io/Portfolio/
 
 Welcome to my geospatial portfolio, built with HTML, CSS, and GitHub Pages. This site highlights selected projects in remote sensing, GIS, wetland science, UAV imagery, environmental field data, and spatial analysis using lightweight web-ready images and a résumé PDF.
 
